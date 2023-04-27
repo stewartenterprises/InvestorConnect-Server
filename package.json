@@ -1,0 +1,81 @@
+{
+  "name": "investorconnect-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/pm2/bin/pm2-runtime main.js",
+    "poststart": "node ./node_modules/pm2/bin/pm2 logs",
+    "dev": "nodemon --max-old-space-size=4076 main.js",
+    "lint": "eslint . --ext .js"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/recaptcha-enterprise": "^3.1.1",
+    "@hubspot/api-client": "^8.5.0",
+    "@sendgrid/client": "^7.7.0",
+    "@sendgrid/mail": "^7.7.0",
+    "@sentry/node": "^6.2.0",
+    "@sentry/tracing": "^6.2.0",
+    "agora-access-token": "^2.0.4",
+    "apple-signin-auth": "^1.4.1",
+    "array-move": "^3.0.1",
+    "aws-sdk": "^2.828.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "firebase-admin": "^9.5.0",
+    "firebase-tools": "^9.14.0",
+    "image-downloader": "^4.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^5.11.11",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "node-apple-receipt-verify": "^1.10.0",
+    "node-fetch": "^2.6.7",
+    "node-geocoder": "^3.27.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "pm2": "^4.5.1",
+    "prettier": "^2.2.1",
+    "recaptcha-node": "^0.1.1",
+    "redis": "^3.0.2",
+    "slack-notify": "^2.0.2",
+    "socket.io": "^4.5.3",
+    "stream-chat": "^8.5.0",
+    "stripe": "^12.0.0",
+    "truffle": "^5.4.7",
+    "twilio": "^3.84.1",
+    "url": "^0.11.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stewartenterprises/InvestorConnect-Server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stewartenterprises/InvestorConnect-Server/issues"
+  },
+  "homepage": "https://github.com/stewartenterprises/InvestorConnect-Server#readme"
+}
